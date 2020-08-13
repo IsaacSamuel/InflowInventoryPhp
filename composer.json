@@ -1,0 +1,29 @@
+{
+    "name": "isaacsamuel/inflow-php",
+    "description": "A simple utility library for interacting with the inflowinventory API.",
+    "type": "library",
+    "require": {
+        "nategood/httpful": "^0.3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "vlucas/phpdotenv": "*"
+    },
+    "scripts": {
+        "test": "phpunit tests"
+    },
+    "autoload": {
+        "psr-4": {
+            "InflowAPI\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Isaac Samuel",
+            "email": "getintouchwithisaac@gmail.com",
+            "homepage": "http://isaacsamuel.github.io",
+            "role": "Developer"
+        }
+    ]
+}
