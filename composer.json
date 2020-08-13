@@ -10,7 +10,7 @@
         "vlucas/phpdotenv": "*"
     },
     "scripts": {
-        "test": "phpunit tests"
+        "test": "phpunit --verbose tests"
     },
     "autoload": {
         "psr-4": {
