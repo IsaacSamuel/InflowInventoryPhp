@@ -1,6 +1,6 @@
 {
     "name": "isaacsamuel/inflow-php",
-    "description": "A simple utility library for interacting with the inflowinventory API.",
+    "description": "A simple utility library for interacting with the Inflow inventory API.",
     "type": "library",
     "require": {
         "nategood/httpful": "^0.3.2"
