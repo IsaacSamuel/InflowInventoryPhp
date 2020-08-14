@@ -8,9 +8,9 @@ use Httpful\Request;
 use InflowAPI\InflowEndpoints;
 
 class InflowAPI {
-    private $secret_key;
-    private $api_version;
-    private $endpoints;
+    protected $secret_key;
+    protected $api_version;
+    protected $endpoints;
 
     public function __construct(string $secret_key, string $company_id, string $api_version = '2020-08-06') {
         $this->endpoints = new InflowEndpoints($company_id, $api_version);
@@ -20,7 +20,7 @@ class InflowAPI {
     }
 
     // Initializes our request object with headers required by API (including secret API key)
-    private function init_api_request() {
+    protected function init_api_request() {
         $template = Request::init();
         $template->addHeaders(array(
             'Authorization' => 'Bearer ' . $this->secret_key,

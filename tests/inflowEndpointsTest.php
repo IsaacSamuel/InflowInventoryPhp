@@ -39,7 +39,7 @@ final class inflowEndpointsTest extends TestCase {
         
         $this->assertEquals(
             $category_endpoint,
-            "https://cloudapi.inflowinventory.com/00000-0000000-000000/categories"
+            "https://cloudapi.inflowinventory.com/00000-0000000-000000/categories/"
         );
     }
     public function testCategoriesEndpointThrowsExceptionForInvalidAPIVersion() {      

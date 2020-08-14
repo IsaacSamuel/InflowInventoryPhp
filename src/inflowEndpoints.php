@@ -19,7 +19,7 @@ class InflowEndpoints {
         $this->endpoints = array(
             '2020-08-06' => array(
                 'base_api_endpoint' => 'https://cloudapi.inflowinventory.com/',
-                'categories' => $this->companyID . '/categories'
+                'categories' => $this->companyID . '/categories/'
             )
         );
     }
